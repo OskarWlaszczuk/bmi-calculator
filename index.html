@@ -16,7 +16,27 @@
 </head>
 
 <body class="body">
-
+    <form class="form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Kalkulator BMI</legend>
+            <p>
+                <label class="form__labelContainer">
+                    <span class="form__labelText">Waga (kg)</span>
+                    <input class="form__inputField" required type="number" name="weightName" placeholder="Wpisz wagę"
+                        min="20" step="any">
+                </label>
+            </p>
+            <p>
+                <label class="form__labelContainer">
+                    <span class="form__labelText">Wzrost (cm)</span>
+                    <input class="form__inputField" required type="number" name="heightName" placeholder="Wpisz wzrtost"
+                        min="120" step="any">
+                </label>
+            </p>
+        </fieldset>
+        <button>Oblicz BMI</button>
+    </form>
+    <p>Twoje BMI wynosi: <span></span></p>
 </body>
 
 </html>
