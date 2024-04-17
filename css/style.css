@@ -17,8 +17,21 @@ html {
 .paragraphResualts {
     width: 80%;
     margin: 15px auto;
+    text-align: center;
 }
 
 .paragraphResualts:hover {
     color: rgba(255, 255, 255, 0.616);
+}
+
+.paragraphResualts__bmiResualts {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: xx-large;
+    text-shadow: 9px 1px 3px #5037a1;
+}
+
+.paragraphResualts__bmiResualts:hover {
+    color: white;
 }
