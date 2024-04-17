@@ -23,21 +23,25 @@
             <p>
                 <label class="form__labelContainer">
                     <span class="form__labelText">Waga (kg)</span>
-                    <input autofocus class="form__inputField js-weightField" required type="number" name="weightName"
-                        placeholder="Wpisz wagę" min="20" step="any">
+                    <input autofocus class="form__inputField js-weightField" required value="80" type="number"
+                        name="weightName" placeholder="Wpisz wagę" min="30" max="350" step="any">
                 </label>
             </p>
             <p>
                 <label class="form__labelContainer">
                     <span class="form__labelText">Wzrost (cm)</span>
-                    <input class="form__inputField js-heightField" required type="number" name="heightName"
-                        placeholder="Wpisz wzrtost" min="120" step="any">
+                    <input class="form__inputField js-heightField" required value="180" type="number" name="heightName"
+                        placeholder="Wpisz wzrtost" min="120" height="280" step="any">
                 </label>
             </p>
         </fieldset>
-        <button class="form__button js-calculateBMIButton">Oblicz BMI</button>
+        <div class="form__buttonConteiner">
+            <button class="form__button">Oblicz BMI</button> <button type="reset"
+                class="form__button form__button--reset">Wyczyść formularz</button>
+        </div>
     </form>
-    <p class="paragraphResualts">Twoje BMI wynosi: <strong class="js-bmiResualts"></strong></p>
+    <p class="paragraphResualts">Twoje BMI wynosi: <br><strong
+            class="paragraphResualts__bmiResualts js-bmiResualts"></strong></p>
 </body>
 
 </html>
