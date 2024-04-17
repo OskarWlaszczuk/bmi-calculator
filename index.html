@@ -17,27 +17,27 @@
 </head>
 
 <body class="body">
-    <form>
+    <form class="js-form">
         <fieldset class="form__fieldset">
             <legend class="form__legend">Kalkulator BMI</legend>
             <p>
                 <label class="form__labelContainer">
                     <span class="form__labelText">Waga (kg)</span>
-                    <input autofocus class="form__inputField" required type="number" name="weightName"
+                    <input autofocus class="form__inputField js-weightField" required type="number" name="weightName"
                         placeholder="Wpisz wagę" min="20" step="any">
                 </label>
             </p>
             <p>
                 <label class="form__labelContainer">
                     <span class="form__labelText">Wzrost (cm)</span>
-                    <input class="form__inputField" required type="number" name="heightName" placeholder="Wpisz wzrtost"
-                        min="120" step="any">
+                    <input class="form__inputField js-heightField" required type="number" name="heightName"
+                        placeholder="Wpisz wzrtost" min="120" step="any">
                 </label>
             </p>
         </fieldset>
-        <button class="form__button">Oblicz BMI</button>
+        <button class="form__button js-calculateBMIButton">Oblicz BMI</button>
     </form>
-    <p class="paragraphResualts">Twoje BMI wynosi: <strong></strong></p>
+    <p class="paragraphResualts">Twoje BMI wynosi: <strong class="js-bmiResualts"></strong></p>
 </body>
 
 </html>
