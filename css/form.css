@@ -12,7 +12,7 @@
 }
 
 .form__legend {
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 25px;
     font-weight: normal;
     background: rgb(149, 72, 216);
@@ -21,6 +21,7 @@
 
 
 .form__labelText {
+    text-decoration: underline;
     padding: 5px 15px;
     border-radius: 10px;
     font-weight: normal;
@@ -40,19 +41,29 @@
     background-color: rgb(239, 195, 242);
 }
 
+.form__buttonConteiner {
+    margin: auto;
+    width: 90%;
+}
+
 .form__button {
-    display: block;
+    display: inline-block;
     color: white;
     background-color: rgb(136 91 222);
-    margin: auto;
     padding: 20px;
     border: 2px solid rgb(96, 58, 165);
     border-radius: 20px;
-    width: 80%;
     font-size: larger;
     font-weight: bolder;
+    width: 49%;
+    min-width: auto;
 }
 
 .form__button:hover {
     background-color: rgb(96, 58, 165);
+}
+
+.form__button--reset:hover {
+    background-color: rgb(165, 58, 129);
+    border: 2px solid rgb(165, 58, 129);
 }
