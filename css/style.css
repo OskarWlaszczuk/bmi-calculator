@@ -8,4 +8,17 @@ html {
 
 .body {
     font-family: "Lexend Deca", sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    background-color: rgb(37 39 70);
+}
+
+.paragraphResualts {
+    width: 80%;
+    margin: 15px auto;
+}
+
+.paragraphResualts:hover {
+    color: rgba(255, 255, 255, 0.616);
 }
