@@ -29,9 +29,9 @@ html {
     text-align: center;
     margin-top: 10px;
     font-size: xx-large;
-    text-shadow: 9px 1px 3px #5037a1;
 }
 
 .paragraphResualts__bmiResualts:hover {
     color: white;
+    text-shadow: 9px 1px 3px #5037a1;
 }
