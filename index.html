@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://play-lh.googleusercontent.com/
+    wiLKNn9tyY-SiNWg_Pib1stLmZU9lYuadq-Y4ASfi7OtJzLDmDknUFcqejQjw4Sqjg">
+    <meta property="og:description" content="Sprawdź swój poziom BMI, aby upewnić się, że dobrze się trzymasz!">
+    <meta property="og:url" content="https://oskarwlaszczuk.github.io/bmi-calculator/">
     <title>Kalkulator BMI</title>
+    <link rel=" icon"
+        href="https://play-lh.googleusercontent.com/NG-IEZELr4hdjlpMmVT0fRn3CCMGop2sKujX6LVQsu8TLsgoFvykMyTDvgv15FadnG4">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,31 +23,37 @@
 </head>
 
 <body class="body">
-    <form class="js-form">
+    <form class="form js-form">
         <fieldset class="form__fieldset">
             <legend class="form__legend">Kalkulator BMI</legend>
             <p>
-                <label class="form__labelContainer">
+                <label>
                     <span class="form__labelText">Waga (kg)</span>
-                    <input autofocus class="form__inputField js-weightField" required value="80" type="number"
-                        name="weightName" placeholder="Wpisz wagę" min="30" max="350" step="any">
+                    <input autofocus class="form__inputField js-weightField" required type="number" name="weightName"
+                        placeholder="Wpisz wagę" min="30" max="350" step="any">
                 </label>
             </p>
             <p>
-                <label class="form__labelContainer">
+                <label>
                     <span class="form__labelText">Wzrost (cm)</span>
-                    <input class="form__inputField js-heightField" required value="180" type="number" name="heightName"
+                    <input class="form__inputField js-heightField" required type="number" name="heightName"
                         placeholder="Wpisz wzrtost" min="120" height="280" step="any">
                 </label>
             </p>
+            <p class="paragraphResualts">Twoje BMI wynosi: <br><strong
+                    class="paragraphResualts__bmiResualts js-bmiResualts"></strong></p>
         </fieldset>
+
         <div class="form__buttonConteiner">
-            <button class="form__button">Oblicz BMI</button> <button type="reset"
-                class="form__button form__button--reset">Wyczyść formularz</button>
+            <button class="form__button">
+                Oblicz BMI
+            </button>
+            <button type="reset" class="form__button form__button--reset">
+                Wyczyść formularz
+            </button>
         </div>
+
     </form>
-    <p class="paragraphResualts">Twoje BMI wynosi: <br><strong
-            class="paragraphResualts__bmiResualts js-bmiResualts"></strong></p>
 </body>
 
 </html>
