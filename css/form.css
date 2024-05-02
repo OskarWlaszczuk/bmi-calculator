@@ -1,10 +1,13 @@
+.form {
+    flex-basis: 75%;
+}
+
 .form__fieldset {
     border: 2px solid rgb(63 66 115);
     background-color: rgb(37 39 70);
     border-radius: 10px;
     margin: 20px auto;
     padding: 20px;
-    width: 80%;
 }
 
 .form__fieldset:hover {
@@ -18,7 +21,6 @@
     background: rgb(149, 72, 216);
     background: linear-gradient(66deg, rgb(97, 47, 142) 100%, rgba(175, 2, 139, 1) 100%);
 }
-
 
 .form__labelText {
     text-decoration: underline;
@@ -42,21 +44,36 @@
 }
 
 .form__buttonConteiner {
-    margin: auto;
-    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width:767px) {
+    .form__buttonConteiner {
+        flex-direction: column;
+    }
 }
 
 .form__button {
     display: inline-block;
     color: white;
     background-color: rgb(136 91 222);
+    margin: 10px 5px;
     padding: 20px;
     border: 2px solid rgb(96, 58, 165);
     border-radius: 20px;
     font-size: larger;
     font-weight: bolder;
-    width: 49%;
+    flex-basis: 48%;
     min-width: auto;
+}
+
+@media (max-width: 767px) {
+    .form__button {
+        margin: 3px 0;
+        flex-basis: 100%;
+    }
 }
 
 .form__button:hover {
