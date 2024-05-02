@@ -1,17 +1,39 @@
-let formElement = document.querySelector(".js-form");
-let weightInputElement = document.querySelector(".js-weightField");
-let heightInputElement = document.querySelector(".js-heightField");
-let resualtElemet = document.querySelector(".js-bmiResualts");
+{
+    const displayResualts = (bmi) => {
+        const resualtElemet = document.querySelector(".js-bmiResualts");
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+        resualtElemet.innerText = bmi.toFixed(2);
+    };
 
-    let weight = weightInputElement.value;
-    let height = heightInputElement.value;
-    let bmi = weight / ((height / 100) ** 2);
+    const calculateResualts = (weight, height) => {
+        const bmi = weight / ((height / 100) ** 2);
 
-    resualtElemet.innerText = bmi.toFixed(2);
+        displayResualts(bmi);
+    };
 
-    formElement.reset();
-    weightInputElement.focus();
-});
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const weight = document.querySelector(".js-weightField").value;
+        const height = document.querySelector(".js-heightField").value;
+
+        calculateResualts(weight, height);
+    };
+
+    const onFormReset = () => {
+        const weightInputElement = document.querySelector(".js-weightField");
+        const resualtElemet = document.querySelector(".js-bmiResualts");
+
+        weightInputElement.focus();
+        resualtElemet.innerText = "";
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+
+        formElement.addEventListener("submit", onFormSubmit);
+        formElement.addEventListener("reset", onFormReset);
+    };
+
+    init();
+};
